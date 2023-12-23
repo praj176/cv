@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" href="D:\Coding\Full Stack Code\Angela Wu\Frontend\CSS\styles.css">
 </head>
 <body>
     <h1>Hi there Prajwal here</h1>
     <h2>Please contact me here</h2>
     <p>Email - kaka@gmail.com</p>
-    <p>Phone no - 8888888888</p>
+    <p>Phone no - 8888888888</p><hr>
     <h3>Please enter your details below</h3>
-    <form action="mailto:prajwalbhandwalkar@gmail.com" method="post" enctype="text/plain">
-        <label for="">Your name</label>
-        <input type="text" name="Yourname">
-        <label for="YourEmail">Your Email</label>
-        <input type="email" name="YourEmail">
-        <br>
-        <label for="">Color Picker</label>
+    <form action="mailto:prajwalbhandwalkar@gmail.com" method="post" enctype="text/plain" class="form">
+        <label for="name">Your name</label>
+        <input type="text" name="Yourname" required><br>
+
+        <label for="email">Your Email</label>
+        <input type="email" required><br>
+
+        <label for="color">Color Picker</label>
         <input type="color"><input type="checkbox">
         <br>
+
+        <p>Gender</p>
+        <input type="radio" id="Male" name="Gender"> <label >Male</label>
+        <input type="radio" id="Female" name="Gender"> <label > Female</label><br>
+
+        <label for="bday">Enter Birthdate</label>
+        <input type="date" name="bday" id=""><br>
+
         <label for="">Enter the password</label>
-        <input type="password"><input type="hidden"><br>
+        <input type="password"><input type="hidden"><br><br>
+
+        <label for="dp">Profile pic</label>
+        <input type="file" name="dp" id="dp"> <br><br>
+
         <label for="">Your Message : </label>
         <textarea name="Message" id="" cols="30" rows="10"></textarea>
-        <br><input type="submit" name="submit your message" id="">
+        <br>
+        
+        <input type="checkbox"><label for="terms">I agree to the <a href="terms.html">terms and conditions</a></label>
+        <input type="submit" name="submit your message" id="">
     </form>
 
 </body>
